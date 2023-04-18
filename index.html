@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload="clearEmptyText()">
+    <div class="container">
+        <img src="./imgs/logo.svg" alt="" srcset="">
+        <div class="main">
+            <textarea placeholder="Digite seu texto">
+            </textarea>
+            <span>
+                <img src="./imgs/info.svg" alt="" srcset="">
+                Apenas letras minúsculas e sem acento.
+            </span>
+            <div class="buttons">
+                <button onclick="encryptMessage()">
+                    Criptografar
+                </button>
+                <button onclick="decryptMessage()">
+                    Descriptografar
+                </button>
+            </div>
+        </div>
+        <div class="decoded_text">
+            <div class="empty-placeholder empty">
+                <img src="./imgs/bg.svg" alt="" srcset="">
+                <p>Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <button id="copy" onclick="copyText()">Copiar</button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+button, a, input[type="button"], input[type="submit"] {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body > img {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+button {
+    transition: .2s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+button:active {
+    transform: none;
+}
